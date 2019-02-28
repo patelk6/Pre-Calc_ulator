@@ -1,6 +1,7 @@
 #Python 3.6
 #Install PyQt5==5.9.2
 #https://build-system.fman.io/pyqt5-tutorial
+# git clone git://github.com/sympy/sympy.git
 from PyQt5.QtWidgets import *
 app = QApplication([])
 window = QWidget()
