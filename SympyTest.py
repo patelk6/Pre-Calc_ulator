@@ -1,3 +1,5 @@
+#https://www.academia.edu/37081579/Precalculus_Mathematics_for_Calculus_7th_Edition_2015_
+
 from sympy import *
 
 x = symbols('x')
