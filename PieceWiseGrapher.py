@@ -16,17 +16,18 @@ def cleanInput(formula):
 		else:
 			outFormula = outFormula + formula[i]
 
-	
 	return outFormula
 
-def parseBounds(formula):
-	for i in range(len(formula)):
+def parseBounds(listOfFunctions):
+	for i in range(len(listOfFunctions)):
+		input("Enter " + str(i) + " bound ")
 		
-	
+
 for i in range(int(numberOfPieces)):
 	function = input("Enter " + str(i+1) + " function ")
 	listOfFunctions.append(cleanInput(function))
-	
+
+parseBounds(listOfFunctions)
+
 print(listOfFunctions)
-	
-	
+
