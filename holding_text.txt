@@ -1,0 +1,34 @@
+def cleanBounds(bounds):
+	function_bounds = []
+	left_bound = -10
+	right_bound = 10
+	for j in range(len(bounds)):
+		
+		for i in range(len(bounds[j])):
+			
+			if(ord(bounds[j][i]) > 65):
+				
+				continue
+			elif(bounds[j][i] == '<'):				
+				if(bounds[j][i+1] == '='):
+					if(int(bounds[j][i+2:]) > 10):
+						function_bounds.append(int(bounds[j][i+2:]))
+					else:
+						function_bounds.append(10)
+					break
+				else:
+					function_bounds.append(int(bounds[j][i+1:]))
+					break
+			elif(bounds[j][i] == '>'):
+				
+				if(bounds[j][i+1] == '='):					
+					if(int(bounds[j][i+2:]) < -10):
+						function_bounds.append(int(bounds[j][i+2:]))
+					else:
+						function_bounds.append(-10)
+					break
+				else:
+					function_bounds.append(int(bounds[j][i+1:]))
+					break
+		
+	return function_bounds
