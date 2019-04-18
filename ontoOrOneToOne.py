@@ -4,8 +4,8 @@ from sympy import *
 def graph(formula, x_range):  
 	x = np.array(x_range)  
 	print(x)
-	#y = eval(formula)	
-	y = np.piecewise('x', [('x < 0, x >= 0 , x>5')], [lambda 'x': 'x**2',lambda 'x':'2' , lambda 'x':'x**3'])
+	y = eval(formula)	
+	#y = np.piecewise('x', [('x < 0, x >= 0 , x>5')], [lambda 'x': 'x**2',lambda 'x':'2' , lambda 'x':'x**3'])
 	plt.plot(x, y)
 
 	
