@@ -32,3 +32,21 @@ def cleanBounds(bounds):
 					break
 		
 	return function_bounds
+
+
+lines - graph lines
+solving equations/inequalities graphically
+functions
+graphs of functions, get information from a graph
+linear functions/models, transformations of functions
+combining functions
+one-to-one and their inverses
+
+modeling with functions, variation
+quadratic functions and models
+polynomial functions
+dividing polynomials
+complex numbers
+complex zeros and fundamental theorem of algebra
+rational functions
+polynomial and rational inequalities
