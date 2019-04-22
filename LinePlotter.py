@@ -18,7 +18,8 @@ def eqOfLine(x_points,y_points):
 	m = slope(x_points,y_points)
 	myTerm = m * x_points[1] + b_symbol - y_points[1]
 	b = (solve(myTerm,b_symbol))
-	y = eval(m*x + b)
-	plt.plot(np.array(10),y)
+	print(b + m)
+	#y = eval(m*x_points + b)
+	#plt.plot(np.array(10),y)
 
 eqOfLine(x_int,y_int)
