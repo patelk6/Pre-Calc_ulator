@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import *
 app = QApplication([])
 window = QWidget()
 layout = QVBoxLayout()
-button = QPushButton('Top')
+button = QPushButton('Select Script')
 
 comboBox = QComboBox()
 
@@ -35,7 +35,7 @@ sortThroughScripts(comboBox)
 
 layout.addWidget(comboBox)
 layout.addWidget(button)
-layout.addWidget(QPushButton('Bottom'))
+
 window.setLayout(layout)
 window.show()
 
